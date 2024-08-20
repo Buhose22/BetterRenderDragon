@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - main
-      workflow_dispatch:
+       workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
 
 env:
   SOLUTION_FILE_PATH: .
